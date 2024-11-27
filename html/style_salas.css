@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #d1c2c2;
+  /*Cor de fundo em hexadecimal*/
+  padding: 20px;
+  text-align: center;
+  /*Alinha o texto do cabeçalho ao centro*/
+  color: rgb(0, 0, 0);
+} /*Fechamento do header*/
+
+.botao-perfil {
+  right: 100px;
+  /*Alinha o botão, com 20 px de distância da borda direita da pagina*/
+  top: 15px;
+  /*Alinha obotão ao topo, com 20 px dedistância da borda superior*/
+  position: absolute;
+  /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
+  background-color: rgba(255, 0, 0, 0.747);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  /*Define o espaço interno do botão em 10 px (vertical) e 20 px (horizontal)*/
+  border-radius: 5px;
+  /*Arredonda os cantos do botão*/
+  cursor: pointer;
+  /*Define o cursor como um ponteiro ao passar sobre o botão*/
+  transition: background-color 0.3s ease; /* Transição suave para o fundo */
+}
+
+footer {
+  font-size: 16px;
+  background-color: #d1c2c2;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
