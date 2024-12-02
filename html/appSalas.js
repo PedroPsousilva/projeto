@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", getAllSalas);
 
 function getAllSalas() {
-  fetch("http://10.89.240.87:3000/project-senai/api/v1/salas", {
+  fetch("http://localhost:3000/project-senai/api/v1/salas", {
     method: "GET",
     headers: {
       "Content-Type": "application/JSON",

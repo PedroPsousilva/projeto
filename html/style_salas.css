@@ -1,44 +1,99 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
 
-header {
-  background-color: #d1c2c2;
-  /*Cor de fundo em hexadecimal*/
-  padding: 20px;
-  text-align: center;
-  /*Alinha o texto do cabeçalho ao centro*/
-  color: rgb(0, 0, 0);
-} /*Fechamento do header*/
+<!DOCTYPE html>      
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Salas - SENAI</title>
+    <link rel="stylesheet" href="style_salas.css" />
+    <style>
+      /* Estilos aplicados aos elementos globais */
+      body {
+        height: 100%;
+        margin: 0;
+      }
 
-.botao-perfil {
-  right: 100px;
-  /*Alinha o botão, com 20 px de distância da borda direita da pagina*/
-  top: 15px;
-  /*Alinha obotão ao topo, com 20 px dedistância da borda superior*/
-  position: absolute;
-  /*Posiciona o botão de forma absoluta com relação ao cabeçalho*/
-  background-color: rgba(255, 0, 0, 0.747);
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  /*Define o espaço interno do botão em 10 px (vertical) e 20 px (horizontal)*/
-  border-radius: 5px;
-  /*Arredonda os cantos do botão*/
-  cursor: pointer;
-  /*Define o cursor como um ponteiro ao passar sobre o botão*/
-  transition: background-color 0.3s ease; /* Transição suave para o fundo */
-}
+      /* Estilo do cabeçalho */
+      header {
+        background-color: #d1c2c2; /* Cor de fundo */
+        padding: 20px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        color: rgb(0, 0, 0); /* Cor do texto */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        /*Define a fonte da pagina como Arial, com uma alternativa de sans-serif*/
+        background-color: #aa0b0b;
+        /*Define a cor de fundo do body / corpo do html*/
+        color: aliceblue;
+        /*Define a cor do texto com tom suave de branco*/
+      } /*Fechamento do body
+      
 
-footer {
-  font-size: 16px;
-  background-color: #d1c2c2;
-  color: rgb(0, 0, 0);
-  padding: 15px;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+      /* Estilo do botão de perfil */
+      .botao-perfil {
+        right: 100px; /* Alinha o botão 100px da borda direita */
+        top: 15px; /* Alinha o botão 15px da borda superior */
+        position: absolute; /* Posicionamento absoluto */
+        background-color: rgba(255, 0, 0, 0.747); /* Cor de fundo do botão */
+        border: 1px solid rgb(0, 0, 0); /* Borda preta */
+        color: rgb(255, 255, 255); /* Cor do texto */
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        border-radius: 5px; /* Arredonda os cantos do botão */
+        cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+        transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+      }
+
+      /* Efeito ao passar o mouse sobre o botão */
+      .botao-perfil:hover {
+        background-color: rgba(255, 0, 0, 1); /* Altera a cor ao passar o mouse */
+      }
+     
+      
+      header img {
+        max-width: 250px;
+        height: 50px;
+      }
+      /* Estilo do rodapé */
+      footer {
+        font-size: 16px; /* Tamanho da fonte */
+        background-color: #d1c2c2; /* Cor de fundo */
+        color: rgb(0, 0, 0); /* Cor do texto */
+        padding: 15px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        bottom: 0; /* Fixa o rodapé na parte inferior */
+        left: 0; /* Alinha o rodapé à esquerda */
+        width: 100%; /* Largura total */
+      
+      }
+      
+      /* Estilo da tabela de salas */
+      table {
+        width: 70%; /* Largura total da tabela */
+        border-collapse: collapse; /* Remove espaços entre bordas */
+        margin-top: 20px; /* Espaçamento superior */
+      }
+
+      th, td {
+        border: 1px solid #ddd; /* Borda cinza clara */
+        padding: 8px; /* Espaçamento interno */
+        text-align: left; /* Alinhamento à esquerda */
+      }
+
+      th {
+        background-color:  #d1c2c2; /* Cor de fundo para cabeçalho */
+        color: white; /* Cor do texto no cabeçalho */
+        font-family: Arial, sans-serif;
+      }
+
+      tr:nth-child(even) {
+        background-color:  white;/* Cor de fundo para linhas pares */
+        color:black
+      }
+
+      tr:hover {
+        background-color: #ddd; /* Cor de fundo ao passar o mouse */
+      }
+    </style>
+  </head>
+  
